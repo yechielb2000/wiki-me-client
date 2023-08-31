@@ -1,23 +1,22 @@
 package com.example.wikime;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.net.URI;
-import java.net.URISyntaxException;
+import com.example.wikime.socket.Socket;
 
 import tech.gusavila92.websocketclient.WebSocketClient;
 
-public class MainActivity extends AppCompatActivity {
+
+public class WaitingRoomActivity extends AppCompatActivity {
+
+    private WebSocketClient webSocket = new Socket().createSocket();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_waiting_room);
+
     }
-
-
 }
