@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -13,12 +14,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
-        app:textAllCaps="true"
         android:layout_margin="10dp"
         android:text="@string/wiki_me"/>
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edittext.join_room"
+        android:id="@+id/edittext.username"
         android:layout_width="match_parent"
         android:layout_margin="10dp"
         android:layout_height="50sp"/>
@@ -29,20 +29,29 @@
         android:layout_margin="10dp"
         android:gravity="center">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/button.create_room"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/create_room"
-            android:layout_margin="10dp"/>
+       <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edittext.join_room"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:layout_height="50sp"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button.join_room"
+            app:icon="@drawable/ic_baseline_search_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/join_room"
-            android:layout_margin="10dp"/>
+            android:backgroundTint="@color/seed"
+            android:text="@string/join_room"/>
     </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button.create_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/create_room"
+        android:backgroundTint="@color/seed"
+        android:layout_margin="10dp"/>
 
 </LinearLayout>
