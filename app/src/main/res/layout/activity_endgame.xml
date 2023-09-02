@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10"
+    tools:context=".EndgameActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textview.leader_board"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Leader Board"
+        android:textSize="30" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview.leader_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview.leader_board"
+        android:layout_marginTop="10" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10"
+        android:gravity="center"
+        android:text="Minimum Jumps"
+        android:textSize="20"
+        android:layout_above="@+id/include.cardview.participant_with_minimum_jumps"/>
+
+    <include
+        android:id="@+id/include.cardview.participant_with_minimum_jumps"
+        layout="@layout/participant_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10"
+        android:layout_above="@+id/button.exit_game"
+        android:layout_centerInParent="true"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button.exit_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:layout_marginTop="10"
+        android:backgroundTint="@color/seed"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
