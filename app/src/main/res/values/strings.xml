@@ -3,4 +3,8 @@
     <string name="create_room">Create Room</string>
     <string name="join_room">Join Room</string>
     <string name="wiki_me">Wiki Me!</string>
+    <string name="title_activity_start_round">StartRoundActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
