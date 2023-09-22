@@ -9,12 +9,12 @@ import tech.gusavila92.websocketclient.WebSocketClient;
 
 public class Socket {
 
-    private final String URL = "http://127.0.0.1:8000/";
+    private final String BASE_URL = "http://127.0.0.1:8000/";
 
-    public WebSocketClient createSocket() {
+    public WebSocketClient createSocket(String route) {
         URI uri;
         try {
-            uri = new URI(URL);
+            uri = new URI(BASE_URL + route);
         } catch (URISyntaxException e) {
             e.printStackTrace();
             return null;

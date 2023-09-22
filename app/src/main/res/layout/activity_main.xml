@@ -20,6 +20,7 @@
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/edittext.username"
         android:layout_width="match_parent"
+        android:hint="username"
         android:layout_margin="10dp"
         android:layout_height="50sp"/>
 
@@ -30,10 +31,9 @@
         android:gravity="center">
 
        <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edittext.join_room"
-        android:layout_width="0dp"
+        android:id="@+id/edittext.room_id" android:hint="room id"
+        android:layout_width="0"
         android:layout_weight="1"
-        android:layout_margin="10dp"
         android:layout_height="50sp"/>
 
         <com.google.android.material.button.MaterialButton
