@@ -2,13 +2,37 @@ package com.example.wikime.socket;
 
 public class Message {
 
-    public enum Test {
-        LOL, LOLO;
+    String message_type, message;
+    WikiPage wiki_start_point, wiki_endpoint;
 
-        @Override
-        public String toString() {
-            return this.getClass().getName().toLowerCase()
+    public String getMessage_type() {
+        return message_type;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public WikiPage getWiki_start_point() {
+        return wiki_start_point;
+    }
+
+    public WikiPage getWiki_endpoint() {
+        return wiki_endpoint;
+    }
+
+    private class WikiPage {
+
+        String url, article;
+
+        public String getUrl() {
+            return url;
         }
+
+        public String getArticle() {
+            return article;
+        }
+
     }
 
     public enum MessageTypes {
@@ -56,6 +80,5 @@ public class Message {
             }
         }
     }
-
 
 }
